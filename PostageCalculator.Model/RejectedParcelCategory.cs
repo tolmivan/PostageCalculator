@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace PostageCalculator.Model
 {
-    public class RejectedParcelCategory : ParcelCategoryBase
+    public class RejectedParcelCategory : ParcelCategory
     {
-        public override Category ParcelCategory
+        public override Category GetParcelCategory()
         {
-            get
-            {
-                return Category.Rejected;
-            }
+            return Category.Rejected;
         }
         public override decimal? GetPostageCost(Parcel parcel)
         {
@@ -21,7 +18,7 @@ namespace PostageCalculator.Model
         }
         public override string ToString()
         {
-            return string.Format("{0}", ParcelCategory);
+            return string.Format("{0}", GetParcelCategory());
         }
     }
 }

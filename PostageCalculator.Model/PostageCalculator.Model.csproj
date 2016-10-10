@@ -42,7 +42,7 @@
     <Compile Include="HeavyParcelCategory.cs" />
     <Compile Include="LargeParcelCategory.cs" />
     <Compile Include="MediumParcelCategory.cs" />
-    <Compile Include="ParcelCategoryBase.cs" />
+    <Compile Include="ParcelCategory.cs" />
     <Compile Include="Parcel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RejectedParcelCategory.cs" />

@@ -15,9 +15,9 @@ namespace PostageCalculator.Model
         Large = 5
     }
 
-    public abstract class ParcelCategoryBase
+    public abstract class ParcelCategory
     {
-        public abstract Category ParcelCategory { get; }
+        public abstract Category GetParcelCategory();
         public abstract decimal? GetPostageCost(Parcel parcel);
         public virtual string PrintPostageCost(Parcel parcel)
         {
@@ -32,7 +32,7 @@ namespace PostageCalculator.Model
         }
         public override string ToString()
         {
-            return string.Format("{0} Parcel", ParcelCategory);
+            return string.Format("{0} Parcel", GetParcelCategory());
         }
 
 

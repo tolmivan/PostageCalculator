@@ -49,7 +49,7 @@ namespace PostageCalculator.Model
             return _parcelCategory.PrintPostageCost(this);
         }
 
-        private ParcelCategoryBase _parcelCategory;
+        private ParcelCategory _parcelCategory;
 
         public Parcel(int weight, int height, int width, int depth)
         {
