@@ -26,8 +26,8 @@ namespace PostageCalculator
             {
                 Parcel parcel = new Parcel(Int32.Parse(weight), Int32.Parse(height), Int32.Parse(width), Int32.Parse(depth));
 
-                Console.WriteLine(string.Format("Category: {0}", parcel.ParcelCategory));
-                Console.WriteLine(string.Format("Cost: {0}", parcel.PostageCostString));
+                Console.WriteLine(string.Format("Category: {0}", parcel.GetParcelCategory()));
+                Console.WriteLine(string.Format("Cost: {0}", parcel.PrintPostageCost()));
                 Console.ReadLine();
             }
             catch

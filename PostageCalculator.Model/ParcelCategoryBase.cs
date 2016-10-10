@@ -19,7 +19,7 @@ namespace PostageCalculator.Model
     {
         public abstract Category ParcelCategory { get; }
         public abstract decimal? GetPostageCost(Parcel parcel);
-        public virtual string GetPostageCostString(Parcel parcel)
+        public virtual string PrintPostageCost(Parcel parcel)
         {
             if (GetPostageCost(parcel).HasValue)
             {

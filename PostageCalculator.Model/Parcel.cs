@@ -37,22 +37,16 @@ namespace PostageCalculator.Model
         /// <summary>
         /// category of parcel
         /// </summary>
-        public string ParcelCategory
+        public string GetParcelCategory()
         {
-            get
-            {
-                return _parcelCategory.ToString();
-            }
+            return _parcelCategory.ToString();
         }
         /// <summary>
         /// postage cost, $
         /// </summary>
-        public string PostageCostString
+        public string PrintPostageCost()
         {
-            get
-            {
-                return _parcelCategory.GetPostageCostString(this);
-            }
+            return _parcelCategory.PrintPostageCost(this);
         }
 
         private ParcelCategoryBase _parcelCategory;
